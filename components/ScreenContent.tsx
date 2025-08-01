@@ -4,7 +4,7 @@ import { HomeScreen } from './screens/HomeScreen';
 
 export type RootStackParamList = {
   Home: undefined;
-  Detail: { itemId: number; otherParam: string };
+  Detail: undefined;
 };
 
 export const ScreenContent = () => {

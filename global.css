@@ -1,3 +1,52 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Define color variables for light and dark modes */
+:root {
+  --background-primary: #f9f9f9;
+  --background-secondary: #ffffff;
+  --background-foreground: #353535;
+  --text-primary: #1a1a1a;
+  --text-secondary: #4a4a4a;
+  --accent-primary: #007bff;
+  --accent-secondary: #0056b3;
+}
+
+/* Dark mode color variables */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-primary: #181818;
+    --background-secondary: #212121;
+    --background-foreground: #353535;
+    --text-primary: #ffffff;
+    --text-secondary: #b0b0b0;
+    --accent-primary: #4dabf7;
+    --accent-secondary: #339af0;
+  }
+}
+
+/* Utility classes for using color variables */
+.bg-primary {
+  background-color: var(--background-primary);
+}
+
+.bg-secondary {
+  background-color: var(--background-secondary);
+}
+
+.text-primary {
+  color: var(--text-primary);
+}
+
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.accent-primary {
+  background-color: var(--accent-primary);
+}
+
+.accent-secondary {
+  background-color: var(--accent-secondary);
+}
